@@ -33,7 +33,7 @@ const handleUserInput = function (key) {
     connection.write(moveRight);
   }
   if (key === "q") {
-    connection.write("Say: I'm winning this");
+    connection.write("Say: I WILL WIN OR ELSE");
   }
   if (key === "e") {
     connection.write("Say: Stay away from that apple");
