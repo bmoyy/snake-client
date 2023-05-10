@@ -1,3 +1,5 @@
+const {moveDown, moveLeft, moveRight, moveUp} = require('./constants');
+
 let connection;
 
 const setupInput = function (conn) {
@@ -19,16 +21,16 @@ const handleUserInput = function (key) {
   }
 
   if (key === "w") {
-    connection.write("Move: up");
+    connection.write(moveUp);
   }
   if (key === "s") {
-    connection.write("Move: down");
+    connection.write(moveDown);
   }
   if (key === "a") {
-    connection.write("Move: left");
+    connection.write(moveLeft);
   }
   if (key === "d") {
-    connection.write("Move: right");
+    connection.write(moveRight);
   }
   if (key === "q") {
     connection.write("Say: I'm winning this");
